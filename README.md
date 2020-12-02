@@ -1,1 +1,1 @@
-# RsearchU Website
+# ResearchU Website
