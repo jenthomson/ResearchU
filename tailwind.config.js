@@ -15,6 +15,11 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
+      rublue: {
+        light: '#b3bcf5',
+        mid: '#2a78c4',
+        dark: '#133fa8',
+      },
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',

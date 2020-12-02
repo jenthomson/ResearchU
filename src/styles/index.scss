@@ -4,9 +4,20 @@
 
 $var:#94a8a7;
 
+$ru-dark-blue:#133fa8;
+$ru-mid-blue:#2a78c4;
+$ru-light-blue:#56c9ef;
+$cta-blue:#c7e2eb;
+
 body {
   /* Just to show that you can mix SASS and Tailwind directives */
-  background-color: $var;
+
+}
+
+#logo {
+  max-width: 300px;
+  position: inherit;
+  z-index: 999;
 }
 
 /* Tailwind @apply directives will be processed by PostCSS after the SASS rendering takes place */
@@ -18,5 +29,44 @@ a:hover { @apply text-blue-800 border-blue-600 }
   @apply list-disc
 }
 
-h1,h2 { @apply font-black }
-h3 { @apply font-bold }
+h1 {}
+h3 { color: $ru-dark-blue;}
+h1,h2,h3 { @apply font-bold; }
+
+main p {
+  margin-bottom: 1em;
+  color: #454547;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blue {
+  background: $ru-dark-blue;
+  background: linear-gradient(180deg, rgba(19,63,168,1) 0%, rgba(34,95,184,1) 35%, rgba(64,137,190,1) 100%);
+  color: white;
+  * {
+    color: white;
+  }
+}
+
+.dark-blue {
+  background: $ru-dark-blue;
+}
+
+.medium-blue {
+  background: $ru-dark-blue;
+}
+
+
+.light-blue {
+  background: $ru-light-blue;
+}
+
+
+footer {
+  color: white;
+  * {
+    color: white;
+  }
+}
