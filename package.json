@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "acorn": "^6.1.1",
+    "caniuse-lite": "^1.0.30000969",
     "node-sass": "^4.14.1",
     "postcss": "^8.1.10"
   }
