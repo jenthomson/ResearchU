@@ -22,7 +22,7 @@ body {
 
 /* Tailwind @apply directives will be processed by PostCSS after the SASS rendering takes place */
 
-a { @apply text-blue-600 no-underline border-b-2 border-blue-600 }
+a { word-wrap: break-word; @apply text-blue-600 no-underline border-b-2 border-blue-600 }
 a:visited { @apply text-indigo-600 no-underline border-b-2 border-indigo-600 }
 a:hover { @apply text-blue-900 no-underline border-b-2 border-blue-900 }
 a:active { @apply text-blue-900 bg-yellow-400 no-underline border-b-4 border-blue-900 }
@@ -70,7 +70,7 @@ main p {
   background: $ru-light-blue;
 }
 
-a.button.blue {
+a.cta-button {
     display: inline-block;
     background: $ru-dark-blue;
     padding: 0.5em 1em;
@@ -79,7 +79,7 @@ a.button.blue {
     border: 4px $ru-dark-blue solid;
 }
 
-a.button.blue:active { @apply text-blue-900 bg-yellow-400 no-underline border-4 border-blue-900 underline }
+a.cta-button:active { @apply text-blue-900 bg-yellow-400 no-underline border-4 border-blue-900 underline }
 
 footer {
   color: white;
